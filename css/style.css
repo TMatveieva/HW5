@@ -14,21 +14,34 @@ html{
 	background-size: cover;
 }
 
-nav{
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, Tahoma, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+header{
 	background: url(../img/top-menu.jpg);
 	display: flex;
 	justify-content: flex-end;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	font-size: 17px;
+	font-size: 16px;
 }
 .nav, .r-nav{
 	display: flex;
 	align-items: center;
-	padding: 0 5px;
+	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+.c-nav{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	margin-right: 5px;
 }
 .r-nav{
 	margin-right: 20px;
@@ -38,36 +51,38 @@ nav{
 }
 .r-blue{
 	background: linear-gradient(to top, #2c77c3, #51b1dc);
-	padding: 10px 10px;
+	padding: 10px;
 }
-.v-line{
+.flag{
 	display: flex;
 	align-items: center;
-	text-decoration: none;
-	margin-right: 20px;
+	width: 35px;
+	background-image: url(../img/flag.png);
+	background-repeat: no-repeat;
+	margin: 5px 0;
+	padding: 0;
 	border-left: 1px Solid #4eabda;
-	padding: 2px;
 }
 .r-nav li{
 	color: #fff;
-}
-.flag{
-	width: 21px;
-	height: 23px;
-	background-image: url(../img/flag.png);
-	background-repeat: no-repeat;
-	margin: 0px 15px;
 }
 .nav a{
 	display: block;
 	color: #4eabda;
 	text-decoration: none;
-	padding: 10px 10px;
+	padding: 10px;
 }
-.nav a:hover{
+.c-nav a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 5px;
+}
+.nav a:hover, .c-nav a:hover{
 	background: #4eabda;
 	color: #fff;
 }
+
 
 main{
 	position: fixed;
@@ -84,7 +99,7 @@ main{
 	color: #fff;
 }
 .head-form h3{
-	font-size: 24px;
+	font-size: 20px;
 	margin: 0;
 }
 .fb-login{
@@ -135,7 +150,7 @@ main{
 	text-align: left;
 	width: 280px;
 	margin: 5px auto;
-	font-size: 18px;
+	font-size: 16px;
 }
 .submit{
 	margin: 15px 0px;
@@ -151,5 +166,5 @@ main{
 	width: 450px;
 	margin: 0 auto;
 	margin-bottom: 15px;
-	font-size: 14px;
+	font-size: 13px;
 }
